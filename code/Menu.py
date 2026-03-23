@@ -10,7 +10,7 @@ from code.Const import WIN_WIDTH, WIN_HEIGHT, C_ORANGE, MENU_OPTION, C_WHITE, C_
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load('./assets/MenuBg.png').convert_alpha()
+        self.surf = pygame.image.load('./assets/02.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def menu_text(self, text_size: int, text: str, text_color: tuple, text_center_pos: tuple):
@@ -22,8 +22,8 @@ class Menu:
     def run(self):
         menu_option = 0  # START MENU POSITION
         # MENU MUSIC
-        pygame.mixer.music.load('./assets/Menu.mp3')
-        pygame.mixer.music.play(-1)  # Param to Loop music
+        pygame.mixer.music.load('./assets/Menuu.mp3')
+        pygame.mixer.music.play(-1, start=2.5)  # Param to Loop music
         while True:
             # SHOW TITLE MENU
             self.window.blit(source=self.surf, dest=self.rect)

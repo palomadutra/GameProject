@@ -31,9 +31,9 @@ ENTITY_DAMAGE = {
     'Player2': 1,
     'Player2Shot': 250,
     'Enemy1': 1,
-    'Enemy1Shot': 400,
+    'Enemy1Shot': 250,
     'Enemy2': 1,
-    'Enemy2Shot': 400
+    'Enemy2Shot': 250
 }
 
 ENTITY_SCORE = {
@@ -95,9 +95,9 @@ ENTITY_HEALTH = {
     'Level2Bg2': 999,
     'Level2Bg3': 999,
     'Level2Bg4': 999,
-    'Player1': 300,
+    'Player1': 900,
     'Player1Shot': 1,
-    'Player2': 300,
+    'Player2': 900,
     'Player2Shot': 1,
     'Enemy1': 50,
     'Enemy1Shot': 5,
@@ -136,7 +136,7 @@ SPAWN_TIME = 500
 
 # T
 TIMEOUT_STEP = 100
-TIMEOUT_LEVEL = 5000
+TIMEOUT_LEVEL = 20000
 # W
 WIN_WIDTH = 576  # Width
 WIN_HEIGHT = 324  # Height

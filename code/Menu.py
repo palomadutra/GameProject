@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import sys
+from ctypes.wintypes import RGB
+from turtledemo.nim import COLOR
+
 import pygame.image
 
 from pygame import Surface, Rect, K_DOWN
@@ -29,6 +32,7 @@ class Menu:
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(50, "Mountain", C_ORANGE, ((WIN_WIDTH / 2), 70))
             self.menu_text(50, "Shooter", C_ORANGE, ((WIN_WIDTH / 2), 120))
+            self.menu_text(23, "SETAS->MOVER-SE / CTRL->ATIRA", RGB(22,55,41), ((WIN_WIDTH / 2), 20))
 
             # SHOW MENU OPTIONS
             for i in range(len(MENU_OPTION)):
